@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackingAnimation : MonoBehaviour
+public class RunningAnimation : MonoBehaviour
 {
     private Animator m_animator;
     // Start is called before the first frame update
@@ -11,18 +11,21 @@ public class AttackingAnimation : MonoBehaviour
         m_animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            m_animator.SetTrigger("Attack");
+           Run();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.D))
         {
-            m_animator.SetTrigger("Jump");
-          
+            Run();
         }
+    }
+
+    void Run()
+    {
+        m_animator.SetTrigger("Run");
     }
 }
