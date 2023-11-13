@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class AttackingAnimation : MonoBehaviour
 {
+
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
+
     private Animator m_animator;
     // Start is called before the first frame update
     void Start()
@@ -19,4 +24,27 @@ public class AttackingAnimation : MonoBehaviour
             m_animator.SetTrigger("Attack");
         }
     }
+
+    void Attack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("Hit" + enemy.name);
+        }
+
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+            return;
+
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+
+        //time stamp 11:09 Melee Combat in Unity
+    }
 }
+
+
