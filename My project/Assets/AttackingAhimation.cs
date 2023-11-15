@@ -26,11 +26,7 @@ public class AttackingAnimation : MonoBehaviour
             Attack();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            m_animator.SetTrigger("Jump");
-          
-        }
+       
     }
 
     void Attack()

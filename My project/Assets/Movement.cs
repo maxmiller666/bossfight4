@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     private float speed = 5f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
+    Animator m_animator;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -28,12 +29,15 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             Debug.Log("Jumping");
+           
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
+
+    
         Flip();
     }
 
@@ -41,7 +45,7 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-        Debug.Log("Horizontal value: " + horizontal);
+       
 
     }
 
@@ -60,4 +64,18 @@ public class Movement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+
+    {
+        
+        if(collision.gameObject.tag == "Enemies")
+        {
+            Destroy(gameObject);
+            Debug.Log("Test");
+
+        }
+    }
+
+
 }

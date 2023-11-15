@@ -13,8 +13,8 @@ public class ObjectMovement : MonoBehaviour
 
     void Start()
     {
-        leftBoundary = transform.position.x - 4.0f; // Define left boundary based on starting position
-        rightBoundary = transform.position.x + 4.0f; // Define right boundary based on starting position
+        leftBoundary = transform.position.x - 2.0f; // Define left boundary based on starting position
+        rightBoundary = transform.position.x + 2.0f; // Define right boundary based on starting position
     }
 
     void Update()
