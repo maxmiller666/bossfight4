@@ -1176,10 +1176,9 @@ GameObject:
   - component: {fileID: 313283693}
   - component: {fileID: 313283692}
   - component: {fileID: 313283691}
-  - component: {fileID: 313283694}
   m_Layer: 0
   m_Name: skull-red
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1265,26 +1264,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &313283694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313283690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b489fe019ae0d4ce4a1c09e19158b818, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  player: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  bulletSpawnPoint: {fileID: 0}
-  bulletSpeed: 5
-  followSpeed: 2
-  triggerPosition: {x: 24.74264, y: -4.077972, z: -10}
-  repeatInterval: 2
 --- !u!1 &339764775
 GameObject:
   m_ObjectHideFlags: 0
@@ -4220,7 +4199,7 @@ GameObject:
   - component: {fileID: 763114924}
   m_Layer: 0
   m_Name: Ghost4
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5171,7 +5150,7 @@ GameObject:
   - component: {fileID: 919494688}
   m_Layer: 0
   m_Name: skull-red (1)
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27593,7 +27572,7 @@ GameObject:
   - component: {fileID: 1365444596}
   m_Layer: 7
   m_Name: worm-brown
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28358,7 +28337,7 @@ GameObject:
   - component: {fileID: 1634490389}
   m_Layer: 0
   m_Name: skull-red (2)
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
