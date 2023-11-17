@@ -1179,7 +1179,7 @@ GameObject:
   - component: {fileID: 313283694}
   m_Layer: 0
   m_Name: skull-red
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5171,7 +5171,7 @@ GameObject:
   - component: {fileID: 919494688}
   m_Layer: 0
   m_Name: skull-red (1)
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27593,7 +27593,7 @@ GameObject:
   - component: {fileID: 1365444596}
   m_Layer: 7
   m_Name: worm-brown
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28358,7 +28358,7 @@ GameObject:
   - component: {fileID: 1634490389}
   m_Layer: 0
   m_Name: skull-red (2)
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
